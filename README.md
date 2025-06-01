@@ -82,7 +82,7 @@ Calculates the median (the middle value) of the numbers in the input array.
     -   The median value.
     -   If the array has an even number of elements, it returns the average of the two middle elements.
     -   If the array has an odd number of elements, it returns the single middle element.
-    -   Returns `NaN` if the array is empty (as `sort` on an empty array is empty, and accessing `sorted[Math.floor(sorted.length / 2)]` would be `sorted[-1]` or `sorted[0]` depending on implementation, leading to `undefined` which then becomes `NaN` in arithmetic operations or if the array was empty from the start, the sort method would return an empty array and accessing any index would be `undefined`). *Correction: The provided code for median doesn't explicitly handle an empty array before sorting, but `sort` on empty is empty. Accessing `sorted[Math.floor(sorted.length / 2)]` on an empty sorted array would be `sorted[0]`, which is `undefined`. If `(undefined + undefined) / 2` or `undefined` is returned, it would result in `NaN`.*
+    -   Returns `NaN` if the array is empty (as `sort` on an empty array is empty, and accessing `sorted[Math.floor(sorted.length / 2)]` would be `sorted[-1]` or `sorted[0]`
 
 ### `Calculate.mode(nArray: number[]): number | number[]`
 
@@ -101,4 +101,4 @@ Feel free to open issues or submit pull requests if you have suggestions for imp
 
 ## License
 
-This code is provided as is. You are free to use, modify, and distribute it. (Or specify a license like MIT, Apache 2.0, etc.)
+This code is provided as is. You are free to use, modify, and distribute it.
