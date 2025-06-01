@@ -30,7 +30,7 @@ export default class Calculate {
 		}
 	}
 
-	public static mode(nArray: number[]) {
+	public static mode(nArray: number[]): number | number[] {
 		const kv: Record<number, number> = {};
 		nArray.forEach((n) => {
 			kv[n] = (kv[n] || 0) + 1;
